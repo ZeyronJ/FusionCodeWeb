@@ -1,4 +1,5 @@
 import React from 'react';
+import { handleMenuClick } from '../utils/domUtils';
 
 const About = () => {
   return (
@@ -54,7 +55,10 @@ const About = () => {
             </div>
           </div>
 
-          <button className='mt-8 bg-gradient-to-r from-[#007bbd] to-[#005a8c] text-white py-3 px-8 rounded-full shadow-lg font-bold transform hover:scale-105 transition'>
+          <button
+            className='mt-8 bg-gradient-to-r from-[#007bbd] to-[#005a8c] text-white py-3 px-8 rounded-full shadow-lg font-bold transform hover:scale-105 transition'
+            onClick={() => handleMenuClick('contact')}
+          >
             Conócenos Más
           </button>
         </div>
