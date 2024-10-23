@@ -8,14 +8,14 @@ const About = () => {
       //   style={{ backgroundImage: `url('/about.jpg')` }}
       id='about'
     >
-      <div className='relative flex flex-col items-center justify-center md:flex-row bg-white p-10 md:rounded-xl shadow-2xl max-w-6xl mx-auto'>
+      <div className='relative flex flex-col items-center justify-center md:flex-row bg-white p-10 md:rounded-xl shadow-2xl max-w-5xl mx-auto border border-blue-100'>
         <img
           src={'/logo.webp'}
           alt='Logo FusionCode'
           className='w-44 h-auto rounded-lg shadow-md border-4 border-[#007bbd]'
         />
 
-        <div className='mt-8 md:mt-0 md:ml-8 max-w-2xl text-center md:text-left'>
+        <div className='mt-8 md:mt-0 md:ml-8 text-center md:text-left'>
           <h2 className='text-4xl font-bold text-[#007bbd] mb-4'>
             ¿Quiénes Somos?
           </h2>

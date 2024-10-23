@@ -39,7 +39,7 @@ export default function Contact() {
         <div className='grid grid-cols-1 gap-8 max-w-2xl mx-auto'>
           {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-8'> */}
           <form
-            className='bg-white p-6 rounded-lg mx-4 shadow-lg text-[#007bbd]'
+            className='bg-white p-6 rounded-lg mx-4 shadow-lg text-[#007bbd] border border-blue-100'
             ref={form}
             onSubmit={sendEmail}
           >
@@ -110,7 +110,7 @@ export default function Contact() {
             </div>
           </form>
 
-          <div className='bg-white p-6 rounded-lg shadow-lg mx-4'>
+          <div className='bg-white p-6 rounded-lg shadow-lg mx-4 border border-blue-100'>
             <h3 className='text-xl font-semibold mb-4 text-[#007bbd]'>
               Información de contacto
             </h3>

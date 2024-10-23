@@ -15,7 +15,7 @@ export default function Header() {
   };
 
   return (
-    <nav className='w-full border-b border-b-slate-950 fixed bg-slate-950/50 backdrop-filter backdrop-blur-sm z-20 shadow-md'>
+    <nav className='w-full fixed bg-blue-950/50 backdrop-filter backdrop-blur-sm z-20 shadow-md'>
       <div className='container flex items-center justify-between sm:justify-center py-2 px-4 mx-auto text-white'>
         <img src='logo.webp' alt='logo' width={40} className='mr-4' />
 
