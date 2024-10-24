@@ -7,7 +7,7 @@ export default function TaskForceTI() {
       id='home'
       className='relative py-20 text-white' // Añadido 'relative' para el overlay
       style={{
-        backgroundImage: "url('/about.jpg')",
+        backgroundImage: "url('/about.webp')",
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
         backgroundPosition: 'center',

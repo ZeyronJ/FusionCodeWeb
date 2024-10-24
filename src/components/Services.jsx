@@ -3,37 +3,37 @@ import React from 'react';
 const Services = () => {
   const serviciosData = [
     {
-      icon: '/dev.png',
+      icon: '/dev.webp',
       titulo: 'Desarrollo de Software',
       descripcion:
         'Creación de soluciones a medida con tecnologías modernas para potenciar tu negocio.',
     },
     {
-      icon: '/consultoria.png',
+      icon: '/consultoria.webp',
       titulo: 'Consultoría Estratégica',
       descripcion:
         'Asesoría profesional para optimizar tus procesos y estrategias empresariales.',
     },
     {
-      icon: '/outsourcing.png',
+      icon: '/outsourcing.webp',
       titulo: 'Outsourcing de TI',
       descripcion:
         'Provisión de talento tecnológico para impulsar la productividad de tu empresa.',
     },
     {
-      icon: '/ux.png',
+      icon: '/ux.webp',
       titulo: 'Diseño UX/UI',
       descripcion:
         'Diseños intuitivos y centrados en el usuario para mejorar la experiencia digital.',
     },
     {
-      icon: '/testing.png',
+      icon: '/testing.webp',
       titulo: 'Pruebas de Software',
       descripcion:
         'Aseguramiento de calidad para aplicaciones con pruebas automatizadas y manuales.',
     },
     {
-      icon: '/automatizacion.png',
+      icon: '/automatizacion.webp',
       titulo: 'Automatización de Procesos',
       descripcion:
         'Mejora de eficiencia mediante la automatización de flujos de trabajo y tareas repetitivas.',
@@ -49,9 +49,15 @@ const Services = () => {
         {serviciosData.map((servicio, index) => (
           <div
             key={index}
-            className='rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 border border-blue-100'
+            className='rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 hover:translate-y-2 border border-blue-100'
+            // className='rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:border-blue-200 border border-blue-100'
           >
-            <img src={servicio.icon} alt='foto' className='w-full' />
+            <img
+              src={servicio.icon}
+              alt='foto'
+              className='w-full'
+              loading='lazy'
+            />
             <div className='p-8'>
               <h3 className='text-2xl font-semibold text-[#007bbd] mb-2'>
                 {servicio.titulo}

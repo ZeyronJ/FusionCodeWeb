@@ -36,7 +36,12 @@ function Projects() {
                 key={index}
                 className='bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 duration-500 ease-in-out'
               >
-                <img className='w-full object-cover' src={project.img} alt='' />
+                <img
+                  className='w-full object-cover'
+                  src={project.img}
+                  alt={project.title}
+                  loading='lazy'
+                />
                 <div className='px-4 py-6'>
                   <h2 className='text-[#007bbd] text-lg font-semibold -mt-2'>
                     {project.title}
